@@ -1,0 +1,9 @@
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: mysql_uint_test
+  pool: 5
+  username: root
+  password:
+  host: localhost

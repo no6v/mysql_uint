@@ -1,0 +1,22 @@
+MysqlUint
+=========
+
+Support unsigned integer columns for MySQL.
+
+Example
+=======
+
+class CreateFoos < ActiveRecord::Migration
+  def self.up
+    create_table :foos do |t|
+      t.string :name
+      t.integer :age, :unsigned => true
+    end
+  end
+
+  def self.down
+    drop_table :foos
+  end
+end
+
+Copyright (c) 2009 Nobuhiro IMAI, released under the MIT license
